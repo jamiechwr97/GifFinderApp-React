@@ -5,13 +5,13 @@ import { GifGrid } from "./components/GifGrid";
 
 export const GifFinderApp = () => {
 
-    const [categories, setCategories] = useState(['Cats']);
+    const [categories, setCategories] = useState(['Popular']);
 
     const onAddCategory = (newCategory) => {
 
         if(categories.includes(newCategory)) return;
 
-        setCategories([ ...categories, newCategory ])
+        setCategories([ newCategory ])
     }
 
     return (
